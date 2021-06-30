@@ -1,0 +1,205 @@
+$baseColor: #ea0f1e;
+
+@media (min-width: 320px) {
+  $defaultTextSizeTo320px: 4.5rem;
+  nav {
+    width: 95%;
+    height: 90vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .menuHome {
+    margin-left: 10%;
+  }
+
+  .title {
+    font-size: $defaultTextSizeTo320px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: 0.5s all;
+    margin: 1rem 0;
+
+    &:hover {
+      margin-left: 10%;
+    }
+  }
+
+  @keyframes startBlock {
+    from {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .button {
+    display: block;
+    position: relative;
+
+    font-size: $defaultTextSizeTo320px;
+    outline: none;
+    color: #fff;
+    background: transparent;
+
+    border: none;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 0;
+    min-width: 60%;
+    cursor: pointer;
+
+    text-align: left;
+
+    // animation: startBlock 0.5s linear;
+  }
+
+  .button span {
+    transition: 0.4s;
+    transition-delay: 0.2s;
+  }
+
+  .button:before,
+  .button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s, opacity 0.8s;
+  }
+
+  .button:before {
+    content: attr(data-hover);
+    transform: translate(-150%, 0);
+
+    color: "red";
+  }
+
+  .button:hover span,
+  .button:active span {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  .button:hover:before {
+    opacity: 1;
+    transform: translate(0, 0);
+
+    transition-delay: 0.4s;
+    text-align: left;
+  }
+
+  .contactPortfolio {
+    width: 100%;
+  }
+
+  .contactPortfolio {
+    color: $baseColor;
+  }
+
+  .worksPortfolio {
+    color: $baseColor;
+  }
+
+  .backgroundEffect {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 375px) {
+  $defaultTextSizeTo375px: 5.4rem;
+
+  .title {
+    font-size: $defaultTextSizeTo375px;
+  }
+
+  .button {
+    font-size: $defaultTextSizeTo375px;
+  }
+}
+
+@media (min-width: 425px) {
+  $defaultTextSizeTo425px: 6rem;
+
+  .title {
+    font-size: $defaultTextSizeTo425px;
+  }
+
+  .button {
+    font-size: $defaultTextSizeTo425px;
+  }
+}
+
+@media (min-width: 768px) {
+  $defaultTextSizeTo768px: 9rem;
+
+  .title {
+    font-size: $defaultTextSizeTo768px;
+  }
+
+  .button {
+    font-size: $defaultTextSizeTo768px;
+  }
+
+  .menuHome {
+    margin-left: 12%;
+  }
+}
+
+@media (min-width: 1024px) {
+  $defaultTextSizeTo1024px: 10rem;
+
+  .title {
+    font-size: $defaultTextSizeTo1024px;
+  }
+
+  .button {
+    font-size: $defaultTextSizeTo1024px;
+  }
+
+  .menuHome {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 1440px) {
+  $defaultTextSizeTo1440px: 14rem;
+
+  .title {
+    font-size: $defaultTextSizeTo1440px;
+  }
+
+  .button {
+    font-size: $defaultTextSizeTo1440px;
+  }
+
+  .menuHome {
+    margin-left: 14%;
+  }
+}
+
+@media (min-width: 1920px) {
+  $defaultTextSizeTo1920px: 16rem;
+
+  .title {
+    font-size: $defaultTextSizeTo1920px;
+  }
+
+  .button {
+    font-size: $defaultTextSizeTo1920px;
+  }
+
+  .menuHome {
+    margin-left: 14%;
+  }
+}

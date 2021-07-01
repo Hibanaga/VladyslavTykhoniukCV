@@ -2,7 +2,7 @@ $baseColor: #ea0f1e;
 
 @media (min-width: 320px) {
   $defaultTextSizeTo320px: 4.5rem;
-  nav {
+  main {
     width: 95%;
     height: 90vh;
     margin: 0 auto;
@@ -61,7 +61,7 @@ $baseColor: #ea0f1e;
   }
 
   .button span {
-    transition: 0.4s;
+    transition: 0.2s;
     transition-delay: 0.2s;
   }
 
@@ -113,6 +113,94 @@ $baseColor: #ea0f1e;
     position: absolute;
     width: 100%;
     height: 100vh;
+  }
+
+  .checkboxSelectLanguage {
+    position: absolute;
+
+    right: 5%;
+    top: 5%;
+    z-index: 999;
+  }
+
+  .dropDownMenu {
+    color: #fff;
+    position: relative;
+  }
+
+  .dropdownTitle {
+    width: 13rem;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.3rem;
+
+    transition: 0.2s;
+
+    &:focus {
+      color: #ea0f1e;
+    }
+  }
+
+  .arrowDropDown {
+    margin-left: 1rem;
+    transform: rotate(-90deg);
+    font-size: 1.3rem;
+
+    transition: 0.2s all ease;
+  }
+
+  .selectionCurrentLanguage {
+    transition: 0.2s;
+
+    cursor: pointer;
+
+    &:hover {
+      color: #ea0f1e;
+
+      .arrowDropDown {
+        transition: 0.2s all ease;
+
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .selectionCurrentLanguageActive {
+    color: #ea0f1e;
+
+    .arrowDropDown {
+      transition: 0.2s all ease;
+
+      transform: rotate(90deg);
+    }
+  }
+
+  .hiddenMenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 0.3rem;
+
+    z-index: 999;
+
+    transition: 0.2s;
+  }
+
+  .hiddenMenuOpen {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .liItemHidden {
+    padding: 0.3rem 0.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: #ea0f1e;
+    }
   }
 }
 

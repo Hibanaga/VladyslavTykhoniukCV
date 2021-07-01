@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+:root {
+  --animate-duration: 1s;
+}
+
 html {
   font-family: "Comfortaa", cursive;
   font-size: 10px;

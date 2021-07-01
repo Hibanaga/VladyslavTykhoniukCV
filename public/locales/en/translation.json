@@ -1,6 +1,11 @@
 {
-  "Thanks": {
-    "1": "Thank you"
+  "Presentation": {
+    "1": "Hello",
+    "10": "About",
+    "2": "I am",
+    "21": "Work",
+    "3": "Vladyslav",
+    "32": "Contact"
   },
   "Why": {
     "1": "For watching this video"

@@ -5,6 +5,7 @@ import Particles from "particlesjs";
 import RadioToggleLanguage from "./Components/RadioToggleLanguage";
 import { withTranslation } from "react-i18next";
 import i18next from "i18next";
+
 // import axios from "axios";
 
 class Home extends Component {
@@ -13,38 +14,51 @@ class Home extends Component {
   };
 
   componentDidMount() {
+    let itemLocal = localStorage.getItem("i18nextLng");
+
+    if (itemLocal) {
+      this.setState({ language: itemLocal });
+      i18next.changeLanguage(itemLocal);
+    }
+
+    if (!itemLocal) {
+      i18next.changeLanguage("en");
+    }
+
     Particles.init({
       selector: ".backgroundEffect",
       maxParticles: 70,
       color: "red",
       sizeVariations: 5,
-      speed: 0.2,
+      speed: 0.1,
     });
+  }
 
-    let value = document.querySelector("html").getAttribute("lang");
+  componentDidUpdate(prevProps, prevState) {
+    let { language } = this.state;
 
-    console.log(value);
-
-    // axios("").then((data) => console.log(data));
-    // this.setState({ language: value });
+    prevState.language !== this.state.language &&
+      localStorage.setItem("i18nextLng", language);
   }
 
   changeLanguageHandler(lang) {
     this.setState({ language: lang });
-
     i18next.changeLanguage(lang);
   }
 
   render() {
     let { t } = this.props;
     let { language } = this.state;
+
     return (
       <>
-        <RadioToggleLanguage
-          onChangeLanguageHandler={this.changeLanguageHandler.bind(this)}
-          currentLanguage={language}
-        />
-        <canvas className="backgroundEffect"></canvas>
+        <div className="wrapperEffectsHome">
+          <RadioToggleLanguage
+            onChangeLanguageHandler={this.changeLanguageHandler.bind(this)}
+            currentLanguage={language}
+          />
+          <canvas className="backgroundEffect"></canvas>
+        </div>
         <main>
           <ul className="menuHome">
             <NavLink to="/About">
@@ -55,6 +69,7 @@ class Home extends Component {
                 <span className="hiddenText">{t("Presentation.1")}</span>
               </li>
             </NavLink>
+
             <NavLink to="/work">
               <li
                 data-hover={t("Presentation.21")}

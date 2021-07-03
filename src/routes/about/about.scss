@@ -1,0 +1,75 @@
+.wrapperAbout {
+  width: 95%;
+  margin: 4% auto;
+
+  color: #fff;
+}
+
+.wrapperEffectsAbout {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+
+  width: 32rem;
+  height: 100vh;
+}
+
+.titleAbout {
+  font-size: 3rem;
+  margin: 10rem 0.5rem 1rem 0.5rem;
+  &::first-letter {
+    padding-left: 1rem;
+  }
+}
+
+.decorateNameTech {
+  color: #0d42f0;
+}
+
+.wrapperDescriptionAbout {
+  margin-top: 4rem;
+}
+
+.descriptionAbout {
+  font-size: 1.4rem;
+  width: 95%;
+  display: block;
+  margin: 1rem auto;
+
+  text-align: justify;
+  line-height: 2rem;
+
+  &::first-letter {
+    padding-left: 1rem;
+  }
+}
+
+.linkToMainPage {
+  position: absolute;
+  z-index: 999;
+
+  right: 10%;
+  top: 15%;
+
+  font-size: 1.6rem;
+  margin-right: -2rem;
+
+  color: #fff;
+  transition: 0.3s;
+
+  .hiddenPartAboutLink {
+    visibility: hidden;
+    opacity: 0;
+    color: #ea0f1e;
+    transition: 0.7s;
+  }
+
+  &:hover {
+    margin-right: 0;
+  }
+
+  &:hover .hiddenPartAboutLink {
+    visibility: visible;
+    opacity: 1;
+  }
+}

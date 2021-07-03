@@ -29,3 +29,10 @@ a {
 body {
   background-color: #000;
 }
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
+}

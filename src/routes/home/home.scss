@@ -109,10 +109,23 @@ $baseColor: #ea0f1e;
     color: $baseColor;
   }
 
+  .wrapperEffectsHome {
+    min-width: 32rem;
+    height: 100vh;
+
+    position: absolute;
+  }
+
   .backgroundEffect {
     position: absolute;
+    z-index: 0;
     width: 100%;
-    height: 100vh;
+    height: 100vh !important;
+
+    // left: 25%;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
   }
 
   .checkboxSelectLanguage {
@@ -214,6 +227,10 @@ $baseColor: #ea0f1e;
   .button {
     font-size: $defaultTextSizeTo375px;
   }
+
+  .wrapperEffectsHome {
+    min-width: 37.5rem;
+  }
 }
 
 @media (min-width: 425px) {
@@ -226,21 +243,42 @@ $baseColor: #ea0f1e;
   .button {
     font-size: $defaultTextSizeTo425px;
   }
+
+  .wrapperEffectsHome {
+    min-width: 42.5rem;
+  }
 }
 
 @media (min-width: 768px) {
-  $defaultTextSizeTo768px: 9rem;
+  $defaultTextSizeTo768px: 8rem;
 
   .title {
     font-size: $defaultTextSizeTo768px;
   }
 
   .button {
+    width: 110%;
     font-size: $defaultTextSizeTo768px;
   }
 
   .menuHome {
-    margin-left: 12%;
+    margin-left: 7%;
+  }
+
+  .selectionCurrentLanguage {
+    font-size: 2.4rem;
+  }
+
+  .liItemHidden {
+    font-size: 1.7rem;
+  }
+
+  .dropdownTitle {
+    width: 15rem;
+  }
+
+  .wrapperEffectsHome {
+    min-width: 76.8rem;
   }
 }
 
@@ -258,10 +296,26 @@ $baseColor: #ea0f1e;
   .menuHome {
     margin-left: 15%;
   }
+
+  .selectionCurrentLanguage {
+    font-size: 2.6rem;
+  }
+
+  .liItemHidden {
+    font-size: 1.9rem;
+  }
+
+  .dropdownTitle {
+    width: 17rem;
+  }
+
+  .wrapperEffectsHome {
+    min-width: 1024px;
+  }
 }
 
 @media (min-width: 1440px) {
-  $defaultTextSizeTo1440px: 14rem;
+  $defaultTextSizeTo1440px: 12rem;
 
   .title {
     font-size: $defaultTextSizeTo1440px;
@@ -273,6 +327,22 @@ $baseColor: #ea0f1e;
 
   .menuHome {
     margin-left: 14%;
+  }
+
+  .selectionCurrentLanguage {
+    font-size: 2.6rem;
+  }
+
+  .liItemHidden {
+    font-size: 1.9rem;
+  }
+
+  .dropdownTitle {
+    width: 17rem;
+  }
+
+  .wrapperEffectsHome {
+    min-width: 144rem;
   }
 }
 
@@ -289,5 +359,13 @@ $baseColor: #ea0f1e;
 
   .menuHome {
     margin-left: 14%;
+  }
+
+  .dropdownTitle {
+    width: 17rem;
+  }
+
+  .wrapperEffectsHome {
+    min-width: 192rem;
   }
 }

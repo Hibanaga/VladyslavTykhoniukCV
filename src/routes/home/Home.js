@@ -11,6 +11,7 @@ import i18next from "i18next";
 class Home extends Component {
   state = {
     language: "en",
+    speedPatricles: 0.1,
   };
 
   componentDidMount() {
@@ -25,6 +26,10 @@ class Home extends Component {
       i18next.changeLanguage("en");
     }
 
+    this.partialInitial();
+  }
+
+  partialInitial = () => {
     Particles.init({
       selector: ".backgroundEffect",
       maxParticles: 70,
@@ -32,7 +37,7 @@ class Home extends Component {
       sizeVariations: 5,
       speed: 0.1,
     });
-  }
+  };
 
   componentDidUpdate(prevProps, prevState) {
     let { language } = this.state;

@@ -1,0 +1,213 @@
+div {
+  width: 100%;
+}
+
+.wrapperworks {
+  min-width: 95%;
+  height: 100vh;
+
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.linkToMainPage {
+  position: absolute;
+  z-index: 999;
+
+  right: 8%;
+  top: 8%;
+
+  font-size: 1.6rem;
+  margin-right: -2rem;
+
+  color: #fff;
+  transition: 0.3s;
+
+  .hiddenPartWorksLink {
+    visibility: hidden;
+    opacity: 0;
+    color: #ea0f1e;
+    transition: 0.4s;
+  }
+
+  &:hover {
+    margin-right: 0;
+  }
+
+  &:hover .hiddenPartWorksLink {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.projectInfoCard {
+  display: block;
+
+  margin: 2rem;
+  transition: 0.3s;
+
+  &:hover {
+    padding-left: 1rem;
+  }
+}
+
+.titleProject {
+  color: #fff;
+  font-size: 3rem;
+  width: 110%;
+  line-height: 145%;
+
+  word-wrap: break-word;
+}
+
+.descriptionProject {
+  color: #ea0f1e;
+  font-size: 1.3rem;
+
+  padding-left: 1rem;
+}
+
+.wrapperProjectsList {
+  margin-top: 20%;
+  margin-left: 2.5%;
+}
+
+@media (min-width: 375px) {
+  .titleProject {
+    color: #fff;
+    font-size: 3.5rem;
+  }
+
+  .descriptionProject {
+    font-size: 1.5rem;
+  }
+
+  .projectInfoCard {
+    margin: 2rem;
+
+    &:hover {
+      padding-left: 2rem;
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  .titleProject {
+    font-size: 3.7rem;
+  }
+
+  .descriptionProject {
+    font-size: 1.8rem;
+    padding-left: 1.5rem;
+  }
+
+  .projectInfoCard {
+    margin: 2rem;
+
+    &:hover {
+      padding-left: 2rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .titleProject {
+    font-size: 6rem;
+  }
+
+  .descriptionProject {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .projectInfoCard {
+    margin: 2rem;
+
+    &:hover {
+      padding-left: 2rem;
+    }
+  }
+
+  .wrapperProjectsList {
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+
+  .projectInfoCard {
+    margin: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titleProject {
+    font-size: 7rem;
+  }
+
+  .descriptionProject {
+    font-size: 2.4rem;
+    padding-left: 1.8rem;
+  }
+
+  .projectInfoCard {
+    margin: 2.4rem;
+    &:hover {
+      padding-left: 2.5rem;
+    }
+  }
+
+  .wrapperProjectsList {
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+
+  .projectInfoCard {
+    margin: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titleProject {
+    font-size: 7rem;
+  }
+
+  .descriptionProject {
+    font-size: 2.4rem;
+    padding-left: 1.8rem;
+  }
+
+  .projectInfoCard {
+    margin: 2.4rem;
+    &:hover {
+      padding-left: 2.5rem;
+    }
+  }
+
+  .wrapperProjectsList {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .projectInfoCard {
+    margin: 3.5rem;
+  }
+
+  .linkToMainPage {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .titleProject {
+    font-size: 9rem;
+  }
+
+  .descriptionProject {
+    font-size: 3rem;
+    padding-left: 2.4rem;
+  }
+
+  .linkToMainPage {
+    font-size: 2.8rem;
+    right: 12%;
+  }
+}

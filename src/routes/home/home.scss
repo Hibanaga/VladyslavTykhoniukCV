@@ -120,12 +120,7 @@ $baseColor: #ea0f1e;
     position: absolute;
     z-index: 0;
     width: 100%;
-    height: 100vh !important;
-
-    // left: 25%;
-    // top: 0;
-    // right: 0;
-    // bottom: 0;
+    height: 100vh;
   }
 
   .checkboxSelectLanguage {
@@ -166,6 +161,9 @@ $baseColor: #ea0f1e;
 
   .selectionCurrentLanguage {
     transition: 0.2s;
+    position: absolute;
+    top: 5%;
+    right: 5%;
 
     cursor: pointer;
 
@@ -194,6 +192,9 @@ $baseColor: #ea0f1e;
     visibility: hidden;
     opacity: 0;
     position: absolute;
+    right: 15%;
+    margin-top: 2rem;
+
     padding: 0.3rem;
 
     z-index: 999;
@@ -231,6 +232,10 @@ $baseColor: #ea0f1e;
   .wrapperEffectsHome {
     min-width: 37.5rem;
   }
+
+  .hiddenMenu {
+    right: 13%;
+  }
 }
 
 @media (min-width: 425px) {
@@ -246,6 +251,10 @@ $baseColor: #ea0f1e;
 
   .wrapperEffectsHome {
     min-width: 42.5rem;
+  }
+
+  .hiddenMenu {
+    right: 12%;
   }
 }
 
@@ -280,6 +289,11 @@ $baseColor: #ea0f1e;
   .wrapperEffectsHome {
     min-width: 76.8rem;
   }
+
+  .hiddenMenu {
+    margin-top: 2.7rem;
+    right: 6%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -312,6 +326,11 @@ $baseColor: #ea0f1e;
   .wrapperEffectsHome {
     min-width: 1024px;
   }
+
+  .hiddenMenu {
+    margin-top: 2.9rem;
+    right: 5.3%;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -343,6 +362,11 @@ $baseColor: #ea0f1e;
 
   .wrapperEffectsHome {
     min-width: 144rem;
+  }
+
+  .hiddenMenu {
+    margin-top: 2.9rem;
+    right: 5%;
   }
 }
 

@@ -28,19 +28,23 @@
 
 .wrapperDescriptionAbout {
   margin-top: 4rem;
+
+  z-index: 999;
+
+  margin-bottom: 6rem;
 }
 
 .descriptionAbout {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   width: 95%;
   display: block;
   margin: 1rem auto;
 
   text-align: justify;
-  line-height: 2rem;
+  line-height: 130%;
 
   &::first-letter {
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 }
 
@@ -49,7 +53,7 @@
   z-index: 999;
 
   right: 10%;
-  top: 15%;
+  top: 10%;
 
   font-size: 1.6rem;
   margin-right: -2rem;
@@ -61,7 +65,7 @@
     visibility: hidden;
     opacity: 0;
     color: #ea0f1e;
-    transition: 0.7s;
+    transition: 0.4s;
   }
 
   &:hover {
@@ -71,5 +75,199 @@
   &:hover .hiddenPartAboutLink {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.techSkills {
+  color: #ea0f1e;
+}
+
+.conceptColor {
+  color: #0d42f0;
+}
+
+.resumeLink {
+  position: absolute;
+  z-index: 999;
+  color: #ea0f1e;
+  font-weight: 700;
+  font-size: 1.5rem;
+  left: 10%;
+  margin-top: 1rem;
+}
+
+@media (min-width: 375px) {
+  .wrapperEffectsAbout {
+    min-width: 37.5rem;
+    min-height: 125vh;
+  }
+
+  .descriptionAbout {
+    font-size: 1.55rem;
+    line-height: 135%;
+    margin-top: 1.5rem;
+  }
+
+  .linkToMainPage {
+    top: 9%;
+    font-size: 1.6rem;
+  }
+
+  .resumeLink {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .linkToMainPage {
+    top: 10%;
+  }
+
+  .wrapperEffectsAbout {
+    min-width: 42.5rem;
+  }
+
+  .titleAbout {
+    font-size: 3.5rem;
+    width: 105%;
+  }
+
+  .descriptionAbout {
+    font-size: 1.75rem;
+    line-height: 135%;
+
+    margin-top: 1.5rem;
+  }
+
+  .resumeLink {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapperEffectsAbout {
+    min-width: 76.8rem;
+    min-height: 150vh;
+  }
+
+  .titleAbout {
+    font-size: 5rem;
+
+    width: 90%;
+    padding-left: 5%;
+
+    &::first-letter {
+      padding-left: 3.5rem;
+    }
+  }
+
+  .descriptionAbout {
+    font-size: 2.3rem;
+
+    &::first-letter {
+      padding-left: 2rem;
+    }
+  }
+
+  .resumeLink {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapperEffectsAbout {
+    min-width: 1024px;
+    min-height: 160vh;
+  }
+
+  .titleAbout {
+    font-size: 6rem;
+    padding-left: 5%;
+
+    &::first-letter {
+      padding-left: 4.5rem;
+    }
+  }
+
+  .descriptionAbout {
+    font-size: 2.9rem;
+
+    &::first-letter {
+      padding-left: 3rem;
+    }
+  }
+
+  .linkToMainPage {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapperEffectsAbout {
+    min-width: 144rem;
+  }
+
+  .titleAbout {
+    font-size: 8rem;
+    padding-left: 5%;
+
+    &::first-letter {
+      padding-left: 4.5rem;
+    }
+  }
+
+  .descriptionAbout {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+
+    &::first-letter {
+      padding-left: 5rem;
+    }
+  }
+
+  .linkToMainPage {
+    font-size: 2rem;
+  }
+
+  .resumeLink {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapperEffectsAbout {
+    width: 190rem;
+    min-height: 120vh;
+  }
+
+  .titleAbout {
+    font-size: 10rem;
+    padding-left: 5%;
+
+    margin-top: 8%;
+    margin-bottom: 5%;
+
+    &::first-letter {
+      padding-left: 8.5rem;
+    }
+  }
+
+  .descriptionAbout {
+    font-size: 3.5rem;
+    margin-top: 3.5rem;
+    width: 85%;
+
+    &::first-letter {
+      padding-left: 5rem;
+    }
+  }
+
+  .linkToMainPage {
+    font-size: 3rem;
+  }
+
+  .wrapperAbout {
+    width: 100%;
+    overflow: hidden;
   }
 }

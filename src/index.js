@@ -5,6 +5,7 @@ import { JellyfishSpinner } from "react-spinners-kit";
 import "./index.scss";
 import { BrowserRouter } from "react-router-dom";
 import "./i18n";
+import projectsAssets from "./assets/projectInfo.json";
 
 ReactDom.render(
   <BrowserRouter>
@@ -16,7 +17,7 @@ ReactDom.render(
         </div>
       }
     >
-      <App />
+      <App assets={projectsAssets} />
     </Suspense>
   </BrowserRouter>,
   document.getElementById("root")

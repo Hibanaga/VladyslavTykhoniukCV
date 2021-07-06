@@ -1,0 +1,40 @@
+{
+  "Presentation": {
+    "1": "Hello.",
+    "10": "About",
+    "2": "I am",
+    "21": "Work",
+    "3": "Vladyslav",
+    "32": "Contact"
+  },
+  "About": {
+    "1": " Hello, my name is",
+    "2": "Vladyslav Tykhoniuk",
+    "3": "I'm 22 years old.",
+    "11": "I've been doing web development for over a year now, and I'm looking for opportunities to put my knowledge into practice.",
+    "12": "The main technologies I work with during development are",
+    "13": "I am also familiar with the concept of creating",
+    "14": "as well as creating",
+    "15": "applications.",
+    "16": "My hobbies are board games with friends, as well as watching old films and basketball.",
+    "17": "My resume",
+    "18": "Graduated educational institutions"
+  },
+  "Contact": {
+    "1": "I would like to create",
+    "2": "cool things",
+    "3": "together with",
+    "4": "cool people.",
+    "10": "Speaking about the preferred tasks, I'm interested in tasks related more to the solution of some tasks than to animation.",
+    "20": "I also really like to discover some new knowledge that will help me improve the quality of the code, and I am happy to hear how this can be done.",
+    "30": "So I will gladly work with a team with which I can improve my skills and enjoy the work I do.",
+    "40": "Language proficiency",
+    "41": "English",
+    "42": "pre-intermediate",
+    "43": "Ukrainian/Russian",
+    "44": "native",
+    "45": "Polish",
+    "46": "intermediate",
+    "50": "I will be glad to communicate with you by all means of contact with me presented below"
+  }
+}

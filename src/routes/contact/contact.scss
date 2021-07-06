@@ -3,6 +3,8 @@
   min-height: 100vh;
   margin: 0 auto;
   color: #fff;
+
+  overflow: hidden;
 }
 
 .titleContact {
@@ -49,12 +51,15 @@
 
 .wrapperBackgroundEffects {
   position: absolute;
+  left: 0;
   z-index: 0;
+  overflow-x: hidden;
 }
 
 .backgroundEffectContact {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
+  overflow-x: hidden;
 }
 
 .strongColorContact {
@@ -79,5 +84,269 @@
 
   &::first-letter {
     padding-left: 1.5rem;
+  }
+}
+
+.menuIngredients {
+  font-size: 1.5rem;
+  margin: 3%;
+  color: blue;
+}
+
+.liItemLanguage {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 125%;
+}
+
+.languageMenu {
+  counter-reset: orderedlist;
+}
+
+.languageMenu .liItemLanguage::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist);
+  font-family: "Indie Flower", cursive;
+}
+
+.liItemLanguage::before {
+  font-size: 2.4rem;
+  line-height: 0.75;
+  padding-top: 0.1rem 0.5rem;
+  margin: 1rem;
+  text-align: center;
+  color: red;
+  border-radius: 0.25em;
+}
+
+.liItemLanguage {
+  padding: 1rem;
+}
+
+.yearsStyleColor {
+  color: #0d42f0;
+}
+
+.subTitleContact {
+  margin-top: 7%;
+  padding-left: 2.5rem;
+}
+
+.subtitleContactLinks {
+  font-size: 1.6rem;
+  text-align: justify;
+  margin: 1.5rem 1rem 1.5rem 1rem;
+
+  &::first-letter {
+    padding-left: 1.5rem;
+  }
+}
+
+.menuLinks {
+  width: 60%;
+  left: 10%;
+  margin-top: -1rem;
+  position: absolute;
+}
+
+.liItemSocial {
+  color: #ea0f1e;
+  transition: 0.3s;
+  margin: 1.5rem 0.5rem;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  cursor: pointer;
+  &:hover {
+    padding-left: 1rem;
+  }
+}
+
+.linkMail {
+  margin-left: 1rem;
+
+  &::before {
+    content: "vladtyhoniuk1999@gmail.com";
+  }
+
+  &:hover::before {
+    content: "Copy to Clipboard";
+  }
+
+  &:active::before {
+    content: "Email copied";
+  }
+}
+
+@media (min-width: 375px) {
+  .descriptionContact {
+    font-size: 1.6rem;
+  }
+
+  .subTitleContact {
+    font-size: 2rem;
+  }
+
+  .backgroundEffectContact {
+    width: 100%;
+    height: 170vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .backgroundEffectContact {
+    width: 100%;
+    height: 180vh;
+  }
+
+  .titleContact {
+    padding-top: 13%;
+    font-size: 3.5rem;
+  }
+
+  .descriptionContact {
+    font-size: 2.1rem;
+
+    &::first-letter {
+      padding-left: 3rem;
+    }
+  }
+
+  .subTitleContact {
+    font-size: 3rem;
+  }
+
+  .liItemLanguage {
+    font-size: 2.3rem;
+  }
+
+  .liItemLanguage::before {
+    font-size: 3.4rem;
+  }
+
+  .subtitleContactLinks {
+    font-size: 2.4rem;
+
+    &::first-letter {
+      padding-left: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .backgroundEffectContact {
+    height: 280vh;
+    width: 100%;
+  }
+
+  .linkToMainPageContact {
+    font-size: 2rem;
+  }
+
+  .titleContact {
+    font-size: 4.5rem;
+  }
+
+  .descriptionContact {
+    margin: 2.5rem 0;
+    font-size: 2.5rem;
+  }
+
+  .subTitleContact {
+    font-size: 4rem;
+  }
+
+  .subtitleContactLinks {
+    font-size: 2.8rem;
+  }
+
+  .liItemSocial {
+    font-size: 2.1rem;
+  }
+
+  .menuLinks {
+    left: 7%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .backgroundEffectContact {
+    height: 280vh;
+  }
+}
+
+@media (min-width: 1920px) {
+  .backgroundEffectContact {
+    width: 192rem;
+    height: 165vh;
+  }
+
+  .linkToMainPageContact {
+    font-size: 2rem;
+  }
+
+  .titleContact {
+    width: 85%;
+    margin-left: 5%;
+    font-size: 6.5rem;
+
+    &::first-letter {
+      padding-left: 7rem;
+    }
+  }
+
+  .descriptionContact {
+    width: 85%;
+    margin-left: 5%;
+    font-size: 2.8rem;
+    margin-top: 1.5%;
+
+    &::first-letter {
+      margin-left: 3rem;
+    }
+  }
+
+  .subTitleContact {
+    font-size: 6rem;
+    margin-left: 4%;
+    margin-top: 5%;
+  }
+
+  .subtitleContactLinks {
+    font-size: 2.8rem;
+  }
+
+  .liItemLanguage {
+    margin-left: 4.5%;
+    font-size: 2.8rem;
+  }
+
+  .subtitleContactLinks {
+    font-size: 3.4rem;
+    margin-left: 3%;
+    width: 85%;
+    line-height: 145%;
+  }
+
+  .liItemSocial {
+    margin: 3rem;
+    font-size: 2.5rem;
+
+    &:hover {
+      // margin-left: 4rem;
+      padding-left: 3rem;
+    }
+  }
+
+  .linkMail {
+    margin-left: 6rem;
+  }
+
+  .menuLinks {
+    left: 7%;
+  }
+
+  .liItemLanguage::before {
+    font-size: 4.5rem;
+    padding-right: 2rem;
   }
 }

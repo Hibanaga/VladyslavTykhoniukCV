@@ -294,10 +294,18 @@ $baseColor: #ea0f1e;
     margin-top: 2.7rem;
     right: 6%;
   }
+
+  .works {
+    width: 45rem;
+
+    &:hover {
+      width: 50rem;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
-  $defaultTextSizeTo1024px: 10rem;
+  $defaultTextSizeTo1024px: 9rem;
 
   .title {
     font-size: $defaultTextSizeTo1024px;
@@ -331,10 +339,18 @@ $baseColor: #ea0f1e;
     margin-top: 2.9rem;
     right: 5.3%;
   }
+
+  .works {
+    width: 50rem;
+
+    &:hover {
+      width: 55rem;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
-  $defaultTextSizeTo1440px: 12rem;
+  $defaultTextSizeTo1440px: 10rem;
 
   .title {
     font-size: $defaultTextSizeTo1440px;
@@ -371,7 +387,7 @@ $baseColor: #ea0f1e;
 }
 
 @media (min-width: 1920px) {
-  $defaultTextSizeTo1920px: 16rem;
+  $defaultTextSizeTo1920px: 15rem;
 
   .title {
     font-size: $defaultTextSizeTo1920px;

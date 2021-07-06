@@ -1,0 +1,83 @@
+.wrapperContact {
+  width: 95%;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.titleContact {
+  padding-top: 30%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: justify;
+  line-height: 135%;
+
+  &::first-letter {
+    padding-left: 2rem;
+  }
+}
+
+.linkToMainPageContact {
+  position: absolute;
+  z-index: 999;
+
+  right: 7%;
+  top: 8%;
+
+  font-size: 1.6rem;
+  margin-right: -2rem;
+
+  color: #fff;
+  transition: 0.3s;
+
+  .hiddenPartContactLink {
+    visibility: hidden;
+    opacity: 0;
+    color: #ea0f1e;
+    transition: 0.4s;
+  }
+
+  &:hover {
+    margin-right: 0;
+  }
+
+  &:hover .hiddenPartContactLink {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.wrapperBackgroundEffects {
+  position: absolute;
+  z-index: 0;
+}
+
+.backgroundEffectContact {
+  width: 100%;
+  height: 100vh;
+}
+
+.strongColorContact {
+  color: #ea0f1e;
+  //   text-transform: uppercase;
+  text-decoration: underline;
+
+  &:last-child {
+    color: #0d42f0;
+  }
+}
+
+.descriptionContactWrapper {
+  margin: 3.5rem auto;
+  text-align: justify;
+}
+
+.descriptionContact {
+  display: block;
+  font-size: 1.3rem;
+  margin: 1rem;
+
+  &::first-letter {
+    padding-left: 1.5rem;
+  }
+}

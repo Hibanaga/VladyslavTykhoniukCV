@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import LinkProject from "./components/linkProject";
 import "./work.scss";
+import PropTypes from "prop-types";
 
-export default class Work extends Component {
+class Work extends Component {
   render() {
     return (
       <div className="wrapperworks">
@@ -26,3 +27,16 @@ export default class Work extends Component {
     );
   }
 }
+
+Work.propTypes = {
+  assetsWorks: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+    })
+  ),
+};
+
+export default Work;

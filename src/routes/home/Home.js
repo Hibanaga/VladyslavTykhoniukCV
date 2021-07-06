@@ -78,9 +78,11 @@ class Home extends Component {
             <NavLink to="/work">
               <li
                 data-hover={t("Presentation.21")}
-                className="title worksPortfolio button"
+                className="title worksPortfolio button works"
               >
-                <span className="hiddenText">{t("Presentation.2")}</span>
+                <span className="hiddenText worksHidden">
+                  {t("Presentation.2")}
+                </span>
               </li>
             </NavLink>
             <NavLink to="/contact">

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Particles from "particlesjs";
 import "./about.scss";
-// import { AnimatedSwitch } from "react-router-transition";
-// import { bounceTransition, mapStyles } from "../animatedRoutes";
 import Typed from "typed.js";
 import { NavLink } from "react-router-dom";
 import { withTranslation } from "react-i18next";
@@ -69,9 +67,8 @@ class About extends Component {
 
         <div className="wrapperDescriptionAbout">
           <span className="descriptionAbout">
-            {t("About.1")}{" "}
-            <span className="conceptColor"> {t("About.2")} </span>.{" "}
-            {t("About.3")}
+            {t("About.1")} <span className="conceptColor"> {t("About.2")}</span>
+            . {t("About.3")}
           </span>
 
           <span className="descriptionAbout">{t("About.11")}</span>
@@ -87,6 +84,24 @@ class About extends Component {
           </span>
 
           <span className="descriptionAbout">{t("About.16")}</span>
+
+          <h2 className="subTitleAbout">{t("About.18")}:</h2>
+          <ol className="finishedCoursesMenu menuIngredients">
+            <li className="liItemEducation">
+              Państwowa Szkoła Wyższa im. Papieża Jana Pawła II w Białej
+              Podlaskiej, <span className="yearsStyleColor">2018 - now</span>
+            </li>
+
+            <li className="liItemEducation">
+              SkillUp, JavaScript Course{" "}
+              <span className="yearsStyleColor"> 02.03.2021-06.07.2021</span>
+            </li>
+
+            <li className="liItemEducation">
+              COBIT5 Foundation{" "}
+              <span className="yearsStyleColor"> 14.06.2021-17.06.2021 </span>
+            </li>
+          </ol>
 
           <a
             href="https://drive.google.com/file/d/1tXGwBJuXbSPBBJ8bQd3uDPEVCLIPo5Q0/view?usp=sharing"

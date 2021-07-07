@@ -3,12 +3,13 @@ import { NavLink } from "react-router-dom";
 import LinkProject from "./components/linkProject";
 import "./work.scss";
 import PropTypes from "prop-types";
+import routes from "../routes";
 
 class Work extends Component {
   render() {
     return (
       <div className="wrapperworks">
-        <NavLink to="/" className="linkToMainPage">
+        <NavLink to={routes.home} className="linkToMainPage">
           Vladysalv.
           <span className="hiddenPartWorksLink">works</span>
         </NavLink>

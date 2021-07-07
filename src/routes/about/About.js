@@ -5,6 +5,7 @@ import Typed from "typed.js";
 import { NavLink } from "react-router-dom";
 import { withTranslation } from "react-i18next";
 import i18next from "i18next";
+import routes from "../routes";
 
 class About extends Component {
   componentDidMount() {
@@ -55,7 +56,7 @@ class About extends Component {
           <canvas className="backgroundEffectAbout"></canvas>
         </div>
 
-        <NavLink to="/" className="linkToMainPage">
+        <NavLink to={routes.home} className="linkToMainPage">
           Vladysalv.
           <span className="hiddenPartAboutLink">About</span>
         </NavLink>

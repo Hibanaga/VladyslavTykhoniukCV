@@ -3,8 +3,26 @@ import Backend from "i18next-http-backend";
 // import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
-const fallbackLng = ["pl"];
-const availableLanguages = ["en", "ua", "pl"];
+// import translationsEN from "./locales/en/translation.json";
+// import translationPL from "./locales/pl/translation.json";
+// import translationUA from "./locales/ua/translation.json";
+
+// // const fallbackLng = ["en"];
+// // const availableLanguages = ["en", "pl", "en"];
+
+// const resources = {
+//   en: {
+//     translationsEN,
+//   },
+//   pl: {
+//     translationPL,
+//   },
+//   ua: {
+//     translationUA,
+//   },
+// };
+
+console.log(window.location.pathname);
 
 const options = {
   // order and from where user language should be detected
@@ -41,10 +59,15 @@ i18n
   .use(initReactI18next) // pass the i18n instance to react-i18next.
 
   .init({
-    fallbackLng, // if user computer language is not on the list of available languages, than we will be using the fallback language specified earlier
-    // debug: true,
-    whitelist: availableLanguages,
+    // fallbackLng, // if user computer language is not on the list of available languages, than we will be using the fallback language specified earlier
+    debug: true,
+    // whitelist: availableLanguages,
     detection: options,
+    // resources,
+
+    backend: {
+      loadPath: "/VladyslavTykhoniukCV/locales/{{lng}}/{{ns}}.json",
+    },
 
     interpolation: {
       escapeValue: false,

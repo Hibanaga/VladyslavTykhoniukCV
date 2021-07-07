@@ -7,8 +7,9 @@ import Contact from "./routes/contact/Contact";
 import { AnimatedSwitch } from "react-router-transition";
 import { bounceTransition, mapStyles } from "./routes/animatedRoutes";
 import PropTypes from "prop-types";
-
 import React from "react";
+import routes from "./routes/routes";
+// "homepage": "https://Hibanaga.github.io/VladyslavTykhoniukCV",
 
 function App({ assets }) {
   return (
@@ -20,15 +21,15 @@ function App({ assets }) {
         mapStyles={mapStyles}
         className="route-wrapper"
       >
-        <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
+        <Route path={routes.home} exact component={Home} />
+        <Route path={routes.about} exact component={About} />
         <Route
-          path="/work"
+          path={routes.work}
           exact
           component={() => <Work assetsWorks={assets} />}
         />
 
-        <Route path="/contact" exact component={Contact} />
+        <Route path={routes.contact} exact component={Contact} />
       </AnimatedSwitch>
     </>
   );

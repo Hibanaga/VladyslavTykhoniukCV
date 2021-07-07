@@ -13,7 +13,7 @@ ReactDom.render(
       className="loadedPage"
       fallback={
         <div className="wrapperLoader">
-          <JellyfishSpinner size={100} color="#fff" />
+          <JellyfishSpinner size={250} color="#fff" />
         </div>
       }
     >

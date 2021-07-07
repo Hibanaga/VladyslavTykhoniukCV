@@ -5,7 +5,7 @@ import Particles from "particlesjs";
 import RadioToggleLanguage from "./Components/RadioToggleLanguage";
 import { withTranslation } from "react-i18next";
 import i18next from "i18next";
-
+import routes from "../routes";
 // import axios from "axios";
 
 class Home extends Component {
@@ -66,7 +66,7 @@ class Home extends Component {
         </div>
         <main>
           <ul className="menuHome">
-            <NavLink to="/About">
+            <NavLink to={routes.about}>
               <li
                 data-hover={t("Presentation.10")}
                 className="title AboutPortfolio button"
@@ -75,7 +75,7 @@ class Home extends Component {
               </li>
             </NavLink>
 
-            <NavLink to="/work">
+            <NavLink to={routes.work}>
               <li
                 data-hover={t("Presentation.21")}
                 className="title worksPortfolio button works"
@@ -85,7 +85,7 @@ class Home extends Component {
                 </span>
               </li>
             </NavLink>
-            <NavLink to="/contact">
+            <NavLink to={routes.contact}>
               <li
                 data-hover={t("Presentation.32")}
                 className="title contactPortfolio button"

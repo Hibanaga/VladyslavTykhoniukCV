@@ -4,6 +4,7 @@ import "./contact.scss";
 import { NavLink } from "react-router-dom";
 import { withTranslation } from "react-i18next";
 import i18next from "i18next";
+import routes from "../routes";
 
 class Contact extends Component {
   state = {
@@ -36,7 +37,7 @@ class Contact extends Component {
             <canvas className="backgroundEffectContact"></canvas>
           </div>
 
-          <NavLink to="/" className="linkToMainPageContact">
+          <NavLink to={routes.home} className="linkToMainPageContact">
             Vladysalv.
             <span className="hiddenPartContactLink">contact</span>
           </NavLink>

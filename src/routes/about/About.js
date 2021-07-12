@@ -104,12 +104,12 @@ class About extends Component {
             </li>
           </ol>
 
-          <a
+          {/* <a
             href="https://drive.google.com/file/d/1tXGwBJuXbSPBBJ8bQd3uDPEVCLIPo5Q0/view?usp=sharing"
             className="resumeLink"
           >
             {t("About.17")}(pdf)
-          </a>
+          </a> */}
         </div>
       </div>
     );
